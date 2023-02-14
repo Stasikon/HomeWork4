@@ -13,7 +13,7 @@ public class Main {
     public static void task1() {
         int age1 = 22;
         if (age1 < 18) {
-            System.out.println("Совершеннолетний");
+            System.out.println("Совершеннолетний ");
         } else {
             System.out.println("Нужно подождать");
         }
