@@ -13,18 +13,18 @@ public class Main {
     public static void task1() {
         int age1 = 22;
         if (age1 < 18) {
-            System.out.println("Совершеннолетний ");
+            System.out.println("Совершеннолетний ему "+age1);
         } else {
-            System.out.println("Нужно подождать");
+            System.out.println("Нужно подождать ведь ему " + age1);
         }
     }
 
     public static void task2() {
         int temp = -1;
         if (temp <= -5) {
-            System.out.println("На улице холодно, нужно надеть шапку");
+            System.out.println("На улице "+temp+", нужно надеть шапку");
         } else {
-            System.out.println("Сегодня тепло, можно идти без шапки");
+            System.out.println("Сегодня "+ temp+" можно идти без шапки");
         }
 
     }
@@ -32,9 +32,9 @@ public class Main {
     public static void task3() {
         int speed = 55;
         if (speed >= 60) {
-            System.out.println("Cкорость превышена");
+            System.out.println("Cкорость превышена "+speed);
         } else {
-            System.out.println("Превышения скорости нет");
+            System.out.println("Превышения скорости нет "+speed);
         }
     }
 
@@ -45,24 +45,24 @@ public class Main {
         boolean university = age < 18 || age > 24;
         boolean work = age > 24 || age > 50;
         if (Kindergarten) {
-            System.out.println("Надо ходить в детский сад");
+            System.out.println("Надо ходить в детский сад так как ему " +age);
         } else {
-            System.out.println("Не надо ходить в детский сад");
+            System.out.println("Не надо ходить в детский сад так как ему "+ age);
         }
         if (school) {
-            System.out.println("Не надо ходитьв шоклу");
+            System.out.println("Не надо ходитьв шоклу так как ему "+ age);
         } else {
-            System.out.println("Надо ходить в школу");
+            System.out.println("Надо ходить в школу так как ему "+ age);
         }
         if (university) {
-            System.out.println("Не надо ходить в универ");
+            System.out.println("Не надо ходить в универ так как ему "+age);
         } else {
-            System.out.println("Надо ходть в униер");
+            System.out.println("Надо ходть в униер так как ему "+age);
         }
         if (work) {
-            System.out.println("Надо ходить на работу");
+            System.out.println("Надо ходить на работу так как ему "+age);
         } else {
-            System.out.println("Не надо  ходить на работу");
+            System.out.println("Не надо  ходить на работу так как ему "+age);
         }
 
     }
@@ -73,13 +73,13 @@ public class Main {
         boolean attractionContol = age < 5 || age < 14;
         boolean goAttraction = age > 14;
         if (noAttraction) {
-            System.out.println("Не может кататься на аттракционе");
+            System.out.println("Не может кататься на аттракционе так как ему "+age);
         } else {
             if (attractionContol) {
-                System.out.println("Если взрослого нет, то кататься нельзя");
+                System.out.println("Если взрослого нет, то кататься нельзя так как ему "+age);
             } else {
                 if (goAttraction) {
-                    System.out.println("Можно кататься без сапрвождения");
+                    System.out.println("Можно кататься без сапрвождения так как ему "+age);
                 }
             }
 
@@ -89,18 +89,20 @@ public class Main {
     }
 
     public static void task6() {
-int passengers = 20;
+int passengers = 80;
 int van = 102;
 int seats = 60;
 boolean vanSeats = passengers < seats;
 boolean noSeats = passengers > seats && passengers < van;
+int inTotal = seats- passengers;
+int free = van - passengers;
 
 if(vanSeats)
 {
-    System.out.println("Сидячие места есть");
+    System.out.println("Сидячие места есть "+inTotal);
 
         } else if (noSeats) {
-    System.out.println("Сидячих мест нету");
+    System.out.println("Сидячих мест нету но в вагоне еще "+free);
 } else {
     System.out.println("Вагон полон");
 
