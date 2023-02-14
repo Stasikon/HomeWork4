@@ -121,7 +121,7 @@ if(vanSeats)
         }else if(maxTwo){
             System.out.println("Максимальное two");
         }else if (maxThree){
-            System.out.println("Максимальное three");
+            System.out.println("Максимальное three ");
         }
 
 
